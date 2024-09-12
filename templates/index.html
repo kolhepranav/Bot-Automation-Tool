@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bot Automation Tool</title>
-    <link rel="icon" sizes="64x64" type="image/png" href="/project/static/cybersecurity.png">
+    <link rel="icon" sizes="64x64" type="image/png" href="{{ url_for('static', filename='cybersecurity.png') }}">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/project/static/css/index.css">
@@ -150,7 +150,7 @@
     <!-- <div class="matrix-bg"></div> -->
     <div class="matrix-bg">
         <video autoplay muted loop id="background-video">
-            <source src="/project/static/153079-804706258_small.mp4" type="video/mp4">
+            <source src="{{ url_for('static', filename='153079-804706258_small.mp4') }}"  type="video/mp4">
             <!-- Your browser does not support the video tag. -->
         </video>
     </div>
